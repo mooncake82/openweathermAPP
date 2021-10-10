@@ -1,0 +1,16 @@
+.spinner-border {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: calc(50% - 80px);
+    left: calc(50% - 80px);
+}
+
+
+// Wanna change color? Here's a list of bs classes you can use.
+// Remember to pass them fromn the parent component!!
+// text-primary
+// text-secondary
+// text-success
+// text-warning
+// text-danger

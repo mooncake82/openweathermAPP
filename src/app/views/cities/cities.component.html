@@ -1,0 +1,53 @@
+<div class="row mb-5">
+    <div class="col">
+        <div class="title">TouchNote</div>
+        <div class="subtitle">WeatherApp component with Angular</div>
+    </div>
+</div>
+
+<ng-container *ngIf="cities && cities.length">
+    <div class="row row-cols-1 row-cols-md-3 mt-5">
+        <div *ngFor="let city of cities"
+            (click)="getCityForecast(city)"
+            class="col mb-4">
+            <bootstrap-card>
+                <ng-container class="header">
+                    {{city.name}}
+                </ng-container>
+
+                <ng-container class="body">
+                    <div class="d-flex justify-content-between">
+                        <h1 class="card-text threshold">
+                            {{city.main.temp | removeDecimals}}
+                        </h1>
+                        <div>
+                            <img src="{{imgUrl}}/{{city.weather[0].icon}}.png"
+                                alt="{{city.weather[0].description}}">
+                        </div>
+                    </div>
+                    <p class="card-text">
+                        {{city.weather[0].description | titlecase}}
+                    </p>
+                    <p class="card-text">
+                        <span>
+                            Humidity
+                        </span>
+                        {{city.main.humidity}}%
+                    </p>
+                    <p class="card-text">
+                        <span class="threshold">
+                            H:{{city.main.temp_max | removeDecimals}}
+                        </span>
+                        <span class="threshold">
+                            L:{{city.main.temp_min | removeDecimals}}
+                        </span>
+                    </p>
+                </ng-container>
+            </bootstrap-card>
+        </div>
+    </div>
+</ng-container>
+
+<bootstrap-spinner [isLoading]="isLoading"
+    [className]="'text-primary'">
+</bootstrap-spinner>

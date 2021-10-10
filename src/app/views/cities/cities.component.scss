@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Reenie+Beanie|Sacramento');
+
+.title {
+    font-size: 70px;
+    font-family: 'Sacramento', cursive;
+}
+
+.subtitle {
+    font-size: 43px;
+    font-family: 'Reenie Beanie', cursive;
+    opacity: 0.6;
+}
+
+p {
+    &:nth-of-type(1) {
+        margin-bottom: 0;
+    }
+}
+
+.threshold:after {
+    content: "\00b0"
+}
