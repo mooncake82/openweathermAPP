@@ -1,4 +1,4 @@
-# TouchNote FE Web Engineer Test
+# TouchNote
 
 ## Introduction
 
@@ -10,7 +10,7 @@ Each ciy should displays:
 * Humidity
 * Chance of Rain
 
->**Things you should know**: after finding out that [DarkSky](https://darksky.net/dev) is  no longer accepting new signups, I looked for another free weather API and *OpenWeather* seems to be very poplar among the dev commumity so I gave it go. There's an issue though, the <u>JSON is not returning the chance of rain</u>. I looked a lot for this issue and I could not find a clear answer: it seems this prop. is optional or it could be provided only with the business version. Even the day/hour *forecastAPI* does not return this prop.
+>**Things you should know**: after finding out that [DarkSky](https://darksky.net/dev) is  no longer accepting new signups, I looked for another free weather API and *OpenWeather* seems to be very poplar among the dev commumity so I gave it go. There's an issue though, the <u>JSON is not returning the chance of rain</u>. I looked a lot for this issue and I could not find a clear answer: it seems this prop. is optional or it comes only with the business version. Even the day/hour *forecastAPI* does not return this prop.
 
 ## Requirements
 
