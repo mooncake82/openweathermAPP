@@ -277,7 +277,8 @@ We want to move this piece of logic out from our component.
      if (error.status === 404) {
 ```
 
-So back to our `data.service` here in the `getAll ` method if there's an exception I wanna that error and instead of sending the `Response` object to our component I wanna send an obj that is part of our application domain.
+So back to our `data.service` here in the `getAll ` method if there's an exception I want to catch the error obj - which is an instance of the `Response ` class - and then returning a different kind of error which is specific to our application. 
+
 
 ```
    public getAll(): Observable<object> {
@@ -336,8 +337,6 @@ So we need to create a new class to represent *application specific error*.
 	    }
 	```
 	
-
-> **Quick Recap:** What we are doing here is catching the error obj which is an instance of the `Response ` class and then we're returning a different kind of error which is specific to our application. 
 
 Now we need to change this implementation and check for the `status ` of the error.
 So if it's `404` we want to return a different kind of error; because in our component we need to know if that post exists or not and we don't want to check the status of the response object.
