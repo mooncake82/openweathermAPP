@@ -487,6 +487,9 @@ The `class` names in the parent component match the `select` in the card compone
 
 ## Final comments
 
+> I used ***Prettier*** as it'the most popular formatter on the vscode store. It's pretty cool, although the indentation is a bit weird in my opinion :)
+
+
 ### What went well?
 
 - I really enjoyed the test;
