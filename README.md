@@ -1,4 +1,4 @@
-# TouchNote
+# OpenWeather APP
 
 ## Introduction
 
